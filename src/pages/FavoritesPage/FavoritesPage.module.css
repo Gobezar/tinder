@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap');
+
+
+.favotiteList {
+    width: 80%;
+}
+.favotiteList h2{
+    text-align: center;
+    font-family: 'Jura', sans-serif;
+    margin-bottom: 40px;
+}
+.favotiteList ul {
+    padding: 0;
+}
+
+.favotiteList li picture {
+    height: 10px;
+}
+.user__information__button {
+    display: flex;
+    justify-content: space-around
+}
+.favotiteList__buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+.favotiteList ul {
+    list-style-type: none;
+}
+.favotiteList__grid {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 30px;
+}
+
+.favotiteList__item {
+    padding: 15px 15px 0px 15px;
+    background-color: rgba(155, 152, 152, 0.089);
+    box-shadow: 0 3px 20px rgba(0, 0, 0, .25),
+    inset 0 2px 0 rgba(255, 255, 255, .6),
+    0 2px 0 rgba(0, 0, 0, .1),
+    inset 0 0 20px rgba(0, 0, 0, .1);
+}
+
+.removeAllFavorites__button {
+    display: flex;
+    justify-content: start;
+    margin-top: 50px;
+}

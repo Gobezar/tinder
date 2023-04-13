@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap');
+
+.NavMenu {
+    display: flex;
+
+}
+
+.NavMenuItem {
+    margin-right: 4rem;
+    display: flex;
+    align-items: center;
+    font-family: 'Jura', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+}
+
+.NavMenuItem span {
+    margin-right: 0.5rem;
+}

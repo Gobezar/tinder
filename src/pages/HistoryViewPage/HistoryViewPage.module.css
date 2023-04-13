@@ -1,0 +1,46 @@
+.historyViewList {
+    width: 80%;
+}
+
+.historyViewList h2{
+    text-align: center;
+    font-family: 'Jura', sans-serif;
+    margin-bottom: 40px;
+}
+
+.historyViewList ul {
+    list-style-type: none;
+}
+.historyViewList__grid {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 30px;
+}
+
+.historyViewList__item {
+    padding: 15px 15px 0px 15px;
+    background-color: rgba(155, 152, 152, 0.089);
+    box-shadow: 0 3px 20px rgba(0, 0, 0, .25),
+    inset 0 2px 0 rgba(255, 255, 255, .6),
+    0 2px 0 rgba(0, 0, 0, .1),
+    inset 0 0 20px rgba(0, 0, 0, .1);
+}
+
+.historyViewList__buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.removeAllHistory__button {
+    display: flex;
+    justify-content: start;
+    margin-top: 50px;
+}
+
+.user__information__button {
+    display: flex;
+    justify-content: space-around
+}

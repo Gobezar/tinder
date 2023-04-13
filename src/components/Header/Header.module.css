@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+h1 {
+    font-family: 'Righteous', 'sans-serif';
+    margin-left: 10px;
+}
+
+img {
+    height: 30px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin: 15px;
+}

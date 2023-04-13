@@ -1,0 +1,39 @@
+.picture {
+    border-radius: 50%;
+    border: 1px solid rgba(0,0,0,0.4);
+    height: 130px;    
+}
+
+.userItemMini__itemPicture {
+    display: flex;
+    justify-content: center;
+}
+.userItemMini__item h3 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.userItemMini__item button {
+    font-family: 'Jura', sans-serif;
+    background-color: rgba(236, 229, 229, 0.959);
+    color: #000;
+    border: 1px solid #fff;
+    font-size: 17px;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+
+.userItemMini__item button:hover {
+    border: 2px solid;
+    border-image: linear-gradient(90deg, rgba(255, 96, 54, 1) 0%, rgba(253, 38, 122, 1) 100%);
+    border-image-slice: 1;
+    color: #000;
+    background-color: #fff;
+}
+
+.userItemMini__button {
+    display: flex;
+    justify-content: center;
+}

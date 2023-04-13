@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap');
+
+
+.form {
+    font-family: 'Jura', sans-serif;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.form input {
+    font-family: 'Jura', sans-serif;
+    font-size: 20px;
+}
