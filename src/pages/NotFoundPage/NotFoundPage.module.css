@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+.NotFoundPage {
+    width: 80%;
+}
+.notFoundText {
+    font-family: 'Jura', sans-serif;
+    text-align: center;
+    font-size: 20px;
+}
+.notFoundButtons {
+    display: flex;
+    justify-content: space-around
+}

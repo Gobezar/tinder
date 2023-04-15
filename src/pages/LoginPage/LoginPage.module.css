@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap');
+
+
+.loginButton {
+    font-family: 'Jura', sans-serif;
+    background-color: rgba(236, 229, 229, 0.959);
+    color: #000;
+    border: 1px solid #fff;
+    font-size: 20px;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+
+.loginHeader {
+    font-family: 'Jura', sans-serif;
+}
+
+.loginWarning {
+    text-align: center;
+    color: green;
+}
