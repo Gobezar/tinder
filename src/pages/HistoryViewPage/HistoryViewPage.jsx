@@ -26,24 +26,6 @@ const HistoryViewPage = () => {
   
 
   return (
-    // <div>
-    //  <Link to='/'>Вернуться к поиску</Link>
-    //   <h1>История просмотров</h1>
-    //   <ul>
-    //     {historyViewList?.map((f) => (
-    //       <li><UserItem
-    //         picture={f.picture.large}
-    //         nameFirst={f.name.first}
-    //         nameLast={f.name.last}
-    //         age={f.dob.age}
-    //         country={f.location.country}
-    //         state={f.location.state}
-    //         email={f.email} />
-    //       </li>
-    //     )).reverse()}
-    //   </ul>
-
-    // </div>
     <div className={styles.historyViewList}>
     <div className={styles.user__information__button}>
       <button onClick={() => navigate(`/`)}>Вернуться к поиску</button>
@@ -54,8 +36,7 @@ const HistoryViewPage = () => {
         <div className={styles.historyViewList__grid}>
           {historyViewList?.map((f) => (
             <div className={styles.historyViewList__item}>
-              <li><UserItemMini
-                key={f.cell}
+              <li key={f.cell}><UserItemMini
                 cell={f.cell}
                 picture={f.picture.large}
                 nameFirst={f.name.first}

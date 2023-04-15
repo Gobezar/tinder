@@ -29,18 +29,21 @@ const fetchUsersSlice = createSlice ({
                 state.historyViewList = [...state.historyViewList, state.currentUser]
               } else return
         },
+        ShowPrevUser (state, action) {
+            state.currentUser =  state.historyViewList[state.historyViewList.length - 2];
+        },
         RemoveAllHistoryView (state, action) {
             state.historyViewList = []
         }, 
         AddtoFavoriteList (state, action) {
-            if (!state.favoriteList.includes(action.payload)) {
-                state.favoriteList = [...state.favoriteList, action.payload] 
-            } else alert("Вы уже добавили в избранное этого человека")
+            const findedIndex = state.favoriteList.findIndex((user) => user.cell === action.payload.cell)
+            if (findedIndex !== -1)  return alert("Вы уже добавили в избранное этого человека")
+            state.favoriteList = [...state.favoriteList, action.payload] 
         },
         AddtoLikedList (state, action) {
-            if (!state.likedList.includes(action.payload)) {
-                state.likedList = [...state.likedList, action.payload] 
-            } else alert("Вы уже лайкали этого человека")
+            const findedIndex = state.likedList.findIndex((user) => user.cell === action.payload.cell)
+            if (findedIndex !== -1)  return alert("Вы уже лайкали этого человека")
+            state.likedList = [...state.likedList, action.payload] 
         },
         RemoveFromFavoriteList (state, action) {
             state.favoriteList = state.favoriteList.filter(obj => obj.email !== action.payload)
@@ -75,6 +78,6 @@ const fetchUsersSlice = createSlice ({
 
 
 
-export const {setCurrentUser, AddtoHistoryViewList, RemoveAllHistoryView, AddtoFavoriteList, AddtoLikedList, RemoveFromFavoriteList, RemoveAllFavorites, RemoveFromLikedList, RemoveAllLiked} = fetchUsersSlice.actions;
+export const {setCurrentUser, AddtoHistoryViewList, ShowPrevUser, RemoveAllHistoryView, AddtoFavoriteList, AddtoLikedList, RemoveFromFavoriteList, RemoveAllFavorites, RemoveFromLikedList, RemoveAllLiked} = fetchUsersSlice.actions;
 
 export default fetchUsersSlice.reducer

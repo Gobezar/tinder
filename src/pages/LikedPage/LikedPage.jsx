@@ -38,8 +38,7 @@ const LikedPage = () => {
           <div className={styles.likedList__grid}>
             {likedList?.map((f) => (
               <div className={styles.likedList__item}>
-                <li><UserItemMini
-                  key={f.cell}
+                <li key={f.cell}><UserItemMini
                   cell={f.cell}
                   picture={f.picture.large}
                   nameFirst={f.name.first}

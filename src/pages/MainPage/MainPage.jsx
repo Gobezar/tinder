@@ -4,9 +4,9 @@ import styles from './MainPage.module.css'
 import ChoiceButtons from '../../components/ChoiseButtons/ChoiceButtons'
 import UserItem from '../../components/UserItem/UserItem'
 import { useSelector, useDispatch } from 'react-redux'
-import { fetchUsers} from '../../redux/slices/fetchUsersSlice'
-import {AddtoHistoryViewList} from '../../redux/slices/fetchUsersSlice'
+import {fetchUsers, AddtoHistoryViewList, ShowPrevUser} from '../../redux/slices/fetchUsersSlice'
 import MyButton from '../../UI/Button/MyButton'
+import Loader from '../../UI/Loader/Loader'
 
 
 
@@ -33,8 +33,8 @@ const MainPage = () => {
       {
             status === 'error'
             ? <div><h3>Не удалось получить данные с сервера. Пожалуйста, повторите попытку позднее</h3></div>
-            : status === 'loading' ? <h3>Идет загрузка...</h3> : <div className={styles.userInformation}>
-            <MyButton > <LeftCircleOutlined /> </MyButton>
+            : status === 'loading' ? <Loader /> : <div className={styles.userInformation}>
+            <MyButton onClick={() => dispatch(ShowPrevUser())}> <LeftCircleOutlined /> </MyButton>
             <div className={styles.userSlide}>
               <UserItem
                 picture={currentUser.picture.large}

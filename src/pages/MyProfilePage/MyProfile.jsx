@@ -3,6 +3,7 @@ import avatar from '../../UI/Images/avatar.jpg'
 import { useNavigate } from "react-router-dom";
 import ModalWindow from '../../components/Modal/ModalWindow';
 import { useSelector, useDispatch } from 'react-redux'
+import { logOut } from '../../redux/slices/loginSlice'
 
 import styles from './MyProfile.module.css'
 import { EditOutlined } from '@ant-design/icons'
@@ -12,6 +13,7 @@ import { EditOutlined } from '@ant-design/icons'
 
 const MyProfile = () => {
 
+  const dispatch = useDispatch()
   const userData = useSelector((state) => state.modalSlice.userData)
   const navigate = useNavigate();
 
@@ -41,6 +43,8 @@ const MyProfile = () => {
 
           </div>
         </div>
+        <div className={styles.buttonExit}><button onClick={() => dispatch(logOut())}>Выйти</button></div>
+
       </div>
 
     </div>

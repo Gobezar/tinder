@@ -27,9 +27,6 @@
     background-color: rgba(236, 229, 229, 0.959);
     color: #000;
     border: 1px solid #fff;
-    /* border: 2px solid;
-    border-image: linear-gradient(90deg, rgba(255, 96, 54, 1) 0%, rgba(253, 38, 122, 1) 100%);
-    border-image-slice: 1; */
     font-size: 20px;
     padding: 10px 30px;
     cursor: pointer;

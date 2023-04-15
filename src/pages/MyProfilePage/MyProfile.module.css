@@ -39,3 +39,9 @@
     flex-direction: column;
     align-items: center;
 }
+
+.buttonExit {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}

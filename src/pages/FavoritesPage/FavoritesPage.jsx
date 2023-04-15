@@ -35,8 +35,7 @@ console.log (favoriteList)
       <div className={styles.favotiteList__grid}>
         {favoriteList?.map((f) => (
           <div className={styles.favotiteList__item}>
-            <li><UserItemMini
-              key={f.cell}
+            <li key={f.cell}><UserItemMini
               cell={f.cell}
               picture={f.picture.large}
               nameFirst={f.name.first}
